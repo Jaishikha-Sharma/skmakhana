@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-<section className="min-h-[85vh] flex items-center justify-center text-center px-6 bg-gradient-to-b from-[#064e3b] to-[#02100b]">
+<section className="min-h-[85vh] flex items-center justify-center text-center px-6 bg-linear-to-b from-[#064e3b] to-[#02100b]">
       <div className="max-w-4xl">
         <h1 className="text-4xl md:text-6xl font-bold text-[#facc15] mb-6">
           Premium Quality Makhana

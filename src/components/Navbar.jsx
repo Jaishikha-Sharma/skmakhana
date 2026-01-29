@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <>
       {/* 🔝 Top Info Bar */}
-      <div className="fixed top-0 left-0 w-full z-50 bg-linear-to-r from-[#6b8e5a] via-[#7fa46c] to-[#6b8e5a] text-white">
+      <div className="fixed top-0 left-0 w-full z-50" style={{ backgroundColor: "#85aa52", color: "white" }}>
         <div className="max-w-7xl mx-auto px-6 py-1.5 flex items-center justify-between text-sm">
           <p className="font-medium">📞 Call Us: +91 98765 43210</p>
         </div>
@@ -43,8 +43,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `px-5 py-2.5 rounded-xl text-[15px] font-semibold tracking-wide transition-all duration-300
                    ${isActive
-                     ? "bg-[#dbead3] text-[#4f6f45] shadow"
-                     : "text-gray-700 hover:bg-[#e6f2df] hover:text-[#4f6f45]"}`
+                     ? "bg-[#85aa52] text-white shadow"
+                     : "text-gray-700 hover:bg-[#a4c06a] hover:text-white"}`
                 }
               >
                 {link.name}
@@ -75,8 +75,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `w-full px-5 py-3 rounded-xl text-[16px] font-semibold transition-all duration-300
                    ${isActive
-                     ? "bg-[#dbead3] text-[#4f6f45] shadow"
-                     : "text-gray-700 hover:bg-[#e6f2df] hover:text-[#4f6f45]"}`
+                     ? "bg-[#85aa52] text-white shadow"
+                     : "text-gray-700 hover:bg-[#a4c06a] hover:text-white"}`
                 }
               >
                 {link.name}
