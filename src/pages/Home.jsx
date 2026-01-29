@@ -1,27 +1,45 @@
+import React from "react";
+import heroImage from "../assets/hero image.jpg";
+
 const Home = () => {
   return (
-<section className="min-h-[85vh] flex items-center justify-center text-center px-6 bg-linear-to-b from-[#064e3b] to-[#02100b]">
-      <div className="max-w-4xl">
-        <h1 className="text-4xl md:text-6xl font-bold text-[#facc15] mb-6">
-          Premium Quality Makhana
-        </h1>
+    <div className="w-full">
 
-        <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-8">
-          Healthy, crunchy and delicious makhana for smart snacking.
-          Freshly packed and delivered to your doorstep.
-        </p>
+      {/* 🌟 Hero Section */}
+      <section className="relative w-full h-screen overflow-hidden">
+        {/* Zooming Background Image */}
+        <img
+          src={heroImage}
+          alt="Hero"
+          className="w-full h-full object-cover transform scale-100 animate-zoom-slow"
+        />
+      </section>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="px-8 py-3 bg-[#facc15] text-black font-semibold rounded-full hover:scale-105 transition">
-            Explore Products
-          </button>
+      {/* 🌿 Cards Section */}
+      <section className="max-w-7xl mx-auto px-6 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          {/* Card 1 */}
+          <div className="bg-white rounded-xl shadow-lg p-8 text-center transition-transform duration-500 hover:scale-105 hover:shadow-2xl">
+            <h3 className="text-xl font-semibold mb-2">Free Shipping</h3>
+            <p className="text-gray-600">On orders above ₹299</p>
+          </div>
 
-          <button className="px-8 py-3 border border-[#facc15] text-[#facc15] rounded-full hover:bg-[#facc15] hover:text-black transition">
-            Learn More
-          </button>
+          {/* Card 2 */}
+          <div className="bg-white rounded-xl shadow-lg p-8 text-center transition-transform duration-500 hover:scale-105 hover:shadow-2xl">
+            <h3 className="text-xl font-semibold mb-2">Premium Quality</h3>
+            <p className="text-gray-600">100% Natural & Fresh</p>
+          </div>
+
+          {/* Card 3 */}
+          <div className="bg-white rounded-xl shadow-lg p-8 text-center transition-transform duration-500 hover:scale-105 hover:shadow-2xl">
+            <h3 className="text-xl font-semibold mb-2">24/7 Support</h3>
+            <p className="text-gray-600">Customer Care Service</p>
+          </div>
+
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
