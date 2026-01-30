@@ -196,8 +196,8 @@ const Home = () => {
     <div className="grid grid-cols-3 gap-3 sm:gap-6 text-center">
 
       {[
-        { num: "1000+", label: "Happy Customers" },
-        { num: "22+", label: "Products" },
+        { num: "10+", label: "Happy Customers" },
+        { num: "2+", label: "Products" },
         { num: "100%", label: "Natural & Fresh" },
       ].map((item, i) => (
         <div
