@@ -86,7 +86,7 @@ const AboutUs = () => {
 
             {[
               {
-                name: "Aditya",
+                name: "Aditya Sharma",
                 role: "Co-Founder",
                 desc: "Focused on building a premium, clean & customer-first brand."
               },
@@ -100,7 +100,7 @@ const AboutUs = () => {
                 key={i}
                 className="group bg-white rounded-2xl shadow-md p-5 text-center hover:shadow-xl hover:-translate-y-1 transition"
               >
-                <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-[#85aa52] to-[#4c6b2c] flex items-center justify-center text-white text-3xl font-bold shadow-md">
+                <div className="w-20 h-20 mx-auto rounded-full bg-linear-to-br from-[#85aa52] to-[#4c6b2c] flex items-center justify-center text-white text-3xl font-bold shadow-md">
                   {p.name[0]}
                 </div>
 
