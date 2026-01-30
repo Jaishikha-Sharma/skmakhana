@@ -152,30 +152,6 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* 📊 Stats */}
-      <section className="pb-14">
-        <div className="max-w-6xl mx-auto px-4 grid grid-cols-3 gap-4 text-center">
-
-          {[
-            { num: "10+", label: "Happy Customers" },
-            { num: "2+", label: "Products" },
-            { num: "100%", label: "Natural & Fresh" },
-          ].map((item, i) => (
-            <div
-              key={i}
-              className="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl transition"
-            >
-              <h3 className="text-3xl font-bold text-[#85aa52]">
-                {item.num}
-              </h3>
-              <p className="text-sm text-[#5f7a3c] mt-1">
-                {item.label}
-              </p>
-            </div>
-          ))}
-
-        </div>
-      </section>
 
     </div>
   );
