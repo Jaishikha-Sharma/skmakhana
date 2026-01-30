@@ -8,7 +8,6 @@ import { ArrowRight, Leaf, Shield, Sparkles } from "lucide-react";
 const AboutUs = () => {
   return (
     <div className="w-full overflow-x-hidden bg-[#f6f8f1]">
-
       {/* 🌟 Hero Section */}
       <section className="relative w-full h-[55vh] md:h-[70vh] overflow-hidden">
         <img
@@ -33,7 +32,6 @@ const AboutUs = () => {
       {/* 🏭 About Content */}
       <section className="py-14">
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-
           {/* Text */}
           <div>
             <h2 className="text-2xl md:text-4xl font-bold text-[#4c6b2c]">
@@ -53,7 +51,10 @@ const AboutUs = () => {
 
             <button className="group mt-6 inline-flex items-center gap-2 px-6 py-3 bg-[#85aa52] hover:bg-[#6f9141] text-white rounded-full transition shadow-lg hover:scale-105">
               Explore Products
-              <ArrowRight size={18} className="group-hover:translate-x-1 transition" />
+              <ArrowRight
+                size={18}
+                className="group-hover:translate-x-1 transition"
+              />
             </button>
           </div>
 
@@ -70,39 +71,39 @@ const AboutUs = () => {
               className="rounded-2xl shadow-lg hover:scale-105 transition"
             />
           </div>
-
         </div>
       </section>
 
       {/* 👑 Owners Section (Compact & Clean) */}
       <section className="py-12 bg-[#dfe8cd]">
         <div className="max-w-6xl mx-auto px-4">
-
           <h2 className="text-center text-2xl md:text-3xl font-bold text-[#4c6b2c]">
             Our Founders
           </h2>
 
           <div className="mt-8 grid grid-cols-2 gap-6">
-
             {[
               {
                 name: "Aditya Sharma",
                 role: "Co-Founder",
-                desc: "Focused on building a premium, clean & customer-first brand."
+                desc: "Focused on building a premium, clean & customer-first brand.",
               },
               {
                 name: "Anudeep",
                 role: "Co-Founder",
-                desc: "Ensuring quality control, smooth operations & customer trust."
+                desc: "Ensuring quality control, smooth operations & customer trust.",
               },
             ].map((p, i) => (
               <div
                 key={i}
                 className="group bg-white rounded-2xl shadow-md p-5 text-center hover:shadow-xl hover:-translate-y-1 transition"
               >
-                <div className="w-20 h-20 mx-auto rounded-full bg-linear-to-br from-[#85aa52] to-[#4c6b2c] flex items-center justify-center text-white text-3xl font-bold shadow-md">
-                  {p.name[0]}
-                </div>
+                {/* Professional Avatar */}
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png"
+                  alt={p.name}
+                  className="w-20 h-20 mx-auto rounded-full bg-white shadow-md p-2 ring-2 ring-[#85aa52]"
+                />
 
                 <h3 className="mt-3 font-semibold text-[#4c6b2c] text-lg">
                   {p.name}
@@ -117,7 +118,6 @@ const AboutUs = () => {
                 </p>
               </div>
             ))}
-
           </div>
         </div>
       </section>
@@ -125,9 +125,7 @@ const AboutUs = () => {
       {/* ✨ Values */}
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4">
-
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-
             {[
               { icon: <Leaf />, title: "100% Natural" },
               { icon: <Shield />, title: "Premium Quality" },
@@ -146,13 +144,9 @@ const AboutUs = () => {
                 </h3>
               </div>
             ))}
-
           </div>
-
         </div>
       </section>
-
-
     </div>
   );
 };

@@ -53,7 +53,7 @@ const Home = () => {
           <div className="grid grid-cols-3 gap-3 sm:gap-6">
 
             <div className="group bg-[#f3f7ea] border border-[#c5d9a6] rounded-2xl sm:rounded-3xl p-3 sm:p-7 text-center transition-all duration-300 hover:-translate-y-1 sm:hover:-translate-y-2 hover:shadow-xl hover:bg-[#e9f1da]">
-              <div className="w-10 h-10 sm:w-14 sm:h-14 mx-auto mb-2 sm:mb-4 flex items-center justify-center rounded-full bg-gradient-to-br from-[#85aa52] to-[#6f9141] text-white shadow-lg group-hover:scale-110 transition">
+              <div className="w-10 h-10 sm:w-14 sm:h-14 mx-auto mb-2 sm:mb-4 flex items-center justify-center rounded-full bg-linear-to-br from-[#85aa52] to-[#6f9141] text-white shadow-lg group-hover:scale-110 transition">
                 <Truck size={18} />
               </div>
               <h3 className="text-xs sm:text-lg font-semibold text-[#4c6b2c]">
@@ -65,7 +65,7 @@ const Home = () => {
             </div>
 
             <div className="group bg-[#f3f7ea] border border-[#c5d9a6] rounded-2xl sm:rounded-3xl p-3 sm:p-7 text-center transition-all duration-300 hover:-translate-y-1 sm:hover:-translate-y-2 hover:shadow-xl hover:bg-[#e9f1da]">
-              <div className="w-10 h-10 sm:w-14 sm:h-14 mx-auto mb-2 sm:mb-4 flex items-center justify-center rounded-full bg-gradient-to-br from-[#85aa52] to-[#6f9141] text-white shadow-lg group-hover:scale-110 transition">
+              <div className="w-10 h-10 sm:w-14 sm:h-14 mx-auto mb-2 sm:mb-4 flex items-center justify-center rounded-full bg-linear-to-br from-[#85aa52] to-[#6f9141] text-white shadow-lg group-hover:scale-110 transition">
                 <Leaf size={18} />
               </div>
               <h3 className="text-xs sm:text-lg font-semibold text-[#4c6b2c]">
@@ -77,7 +77,7 @@ const Home = () => {
             </div>
 
             <div className="group bg-[#f3f7ea] border border-[#c5d9a6] rounded-2xl sm:rounded-3xl p-3 sm:p-7 text-center transition-all duration-300 hover:-translate-y-1 sm:hover:-translate-y-2 hover:shadow-xl hover:bg-[#e9f1da]">
-              <div className="w-10 h-10 sm:w-14 sm:h-14 mx-auto mb-2 sm:mb-4 flex items-center justify-center rounded-full bg-gradient-to-br from-[#85aa52] to-[#6f9141] text-white shadow-lg group-hover:scale-110 transition">
+              <div className="w-10 h-10 sm:w-14 sm:h-14 mx-auto mb-2 sm:mb-4 flex items-center justify-center rounded-full bg-linear-to-br from-[#85aa52] to-[#6f9141] text-white shadow-lg group-hover:scale-110 transition">
                 <Headphones size={18} />
               </div>
               <h3 className="text-xs sm:text-lg font-semibold text-[#4c6b2c]">

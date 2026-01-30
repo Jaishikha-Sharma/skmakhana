@@ -4,7 +4,7 @@ import logo from "../assets/SKI 1.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-[#07140f] to-[#0c1a12] text-gray-300 pt-16">
+    <footer className="bg-linear-to-b from-[#07140f] to-[#0c1a12] text-gray-300 pt-16">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-14">
 
         {/* Brand */}
@@ -69,11 +69,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center gap-3">
               <Phone size={18} className="text-[#a4c06a]" />
-              +91 98765 43210
-            </li>
-            <li className="flex items-center gap-3">
-              <Mail size={18} className="text-[#a4c06a]" />
-              support@skmakhana.com
+              +91 7027651908
             </li>
           </ul>
         </div>
