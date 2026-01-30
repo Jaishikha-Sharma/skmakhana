@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-6 py-1.5 flex items-center justify-between text-sm text-white">
           <p className="flex items-center gap-2 font-medium">
             <Phone size={16} className="text-yellow-300" />
-            +91 98765 43210
+            +91 7027651908
           </p>
         </div>
       </div>
