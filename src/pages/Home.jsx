@@ -17,6 +17,30 @@ const Home = () => {
     <div className="w-full overflow-x-hidden bg-[#f6f8f1]">
       {/* 🌟 Hero Section */}
       <section className="relative w-full h-[75vh] md:h-screen overflow-hidden">
+        {/* 📱 Mobile Quick Top Links */}
+<div className="absolute top-0 left-0 w-full md:hidden z-30">
+  <div className="flex justify-center gap-2 bg-black/40 backdrop-blur px-2 py-1">
+    <NavLink to="/" className="text-[11px] text-white/90 font-medium">
+      Home
+    </NavLink>
+    <span className="text-white/40">|</span>
+
+    <NavLink to="/about" className="text-[11px] text-white/90 font-medium">
+      About
+    </NavLink>
+    <span className="text-white/40">|</span>
+
+    <NavLink to="/makhana" className="text-[11px] text-white/90 font-medium">
+      Products
+    </NavLink>
+    <span className="text-white/40">|</span>
+
+    <NavLink to="/contact" className="text-[11px] text-white/90 font-medium">
+      Contact
+    </NavLink>
+  </div>
+</div>
+
         <img
           src={heroImage}
           alt="Hero"

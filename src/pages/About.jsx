@@ -1,15 +1,26 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import heroImage from "../assets/hero image.jpg";
 import peri from "../assets/peri.jpg";
 import pudina from "../assets/pudina.jpg";
 
-import { ArrowRight, Leaf, Shield, Sparkles } from "lucide-react";
+import { ArrowLeft, ArrowRight, Leaf, Shield, Sparkles } from "lucide-react";
 
 const AboutUs = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="w-full overflow-x-hidden bg-[#f6f8f1]">
       {/* 🌟 Hero Section */}
       <section className="relative w-full h-[55vh] md:h-[70vh] overflow-hidden">
+        {/* 🔙 Mobile Back Button */}
+        <button
+          onClick={() => navigate(-1)}
+          className="absolute top-2 left-2 md:hidden z-40 bg-black/40 backdrop-blur text-white p-2 rounded-full shadow hover:bg-black/60 transition"
+        >
+          <ArrowLeft size={18} />
+        </button>
+
         <img
           src={heroImage}
           alt="About SK Industries"
@@ -48,12 +59,11 @@ const AboutUs = () => {
               As fresh entrepreneurs, we carefully source, roast and pack every
               batch to ensure purity, crunch and nutrition in every bite.
             </p>
-
           </div>
         </div>
       </section>
 
-      {/* 👑 Owners Section (Compact & Clean) */}
+      {/* 👑 Owners Section */}
       <section className="py-12 bg-[#dfe8cd]">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-center text-2xl md:text-3xl font-bold text-[#4c6b2c]">
@@ -77,7 +87,6 @@ const AboutUs = () => {
                 key={i}
                 className="group bg-white rounded-2xl shadow-md p-5 text-center hover:shadow-xl hover:-translate-y-1 transition"
               >
-                {/* Professional Avatar */}
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png"
                   alt={p.name}

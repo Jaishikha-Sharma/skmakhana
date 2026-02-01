@@ -1,9 +1,24 @@
 import React from "react";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail, ArrowLeft } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="min-h-screen bg-[#f6f9f1] pt-28 sm:pt-32 pb-16 px-3 sm:px-4">
+    <div className="relative min-h-screen bg-[#f6f9f1] pt-28 sm:pt-32 pb-16 px-3 sm:px-4">
+
+      {/* 🔙 Premium Mobile Back Button */}
+      <button
+        onClick={() => navigate(-1)}
+        className="fixed top-[90px] left-3 md:hidden z-50 flex items-center gap-1.5 
+        bg-white/80 backdrop-blur-md text-[#4c6b2c] px-3 py-1.5 rounded-full 
+        shadow-lg hover:shadow-xl hover:scale-105 transition"
+      >
+        <ArrowLeft size={14} />
+        <span className="text-[11px] font-semibold">Back</span>
+      </button>
+
       <div className="max-w-6xl mx-auto">
 
         {/* Heading */}

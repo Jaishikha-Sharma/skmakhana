@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { ShoppingCart } from "lucide-react";
-import { useLocation } from "react-router-dom";
+import { ShoppingCart, ArrowLeft } from "lucide-react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import peri from "../assets/peri.jpg";
 import onion from "../assets/salt.jpg";
@@ -38,6 +38,7 @@ const productsData = [
 
 const Category = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [search, setSearch] = useState("");
 
   useEffect(() => {
@@ -51,7 +52,20 @@ const Category = () => {
   );
 
   return (
-    <div className="bg-[#f6f8f1] min-h-screen py-12 sm:py-16">
+    <div className="relative bg-[#f6f8f1] min-h-screen py-12 sm:py-16">
+
+      {/* 🔙 Mobile Back Button */}
+  {/* 🔙 Premium Mobile Back Button */}
+<button
+  onClick={() => navigate(-1)}
+  className="absolute top-3 left-3 md:hidden z-40 flex items-center gap-1.5 
+  bg-white/80 backdrop-blur-md text-[#4c6b2c] px-3 py-1.5 rounded-full 
+  shadow-lg hover:shadow-xl hover:scale-105 transition"
+>
+  <ArrowLeft size={14} />
+  <span className="text-[11px] font-semibold">Back</span>
+</button>
+
 
       {/* 🔥 Page Heading */}
       <div className="text-center mb-10">
