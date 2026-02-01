@@ -49,27 +49,6 @@ const AboutUs = () => {
               batch to ensure purity, crunch and nutrition in every bite.
             </p>
 
-            <button className="group mt-6 inline-flex items-center gap-2 px-6 py-3 bg-[#85aa52] hover:bg-[#6f9141] text-white rounded-full transition shadow-lg hover:scale-105">
-              Explore Products
-              <ArrowRight
-                size={18}
-                className="group-hover:translate-x-1 transition"
-              />
-            </button>
-          </div>
-
-          {/* Images */}
-          <div className="grid grid-cols-2 gap-4">
-            <img
-              src={peri}
-              alt="Peri Makhana"
-              className="rounded-2xl shadow-lg hover:scale-105 transition"
-            />
-            <img
-              src={pudina}
-              alt="Pudina Makhana"
-              className="rounded-2xl shadow-lg hover:scale-105 transition"
-            />
           </div>
         </div>
       </section>
