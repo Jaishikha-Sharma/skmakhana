@@ -12,7 +12,7 @@ const AboutUs = () => {
       <section className="relative w-full h-[55vh] md:h-[70vh] overflow-hidden">
         <img
           src={heroImage}
-          alt="About skMakhana"
+          alt="About SK Industries"
           className="w-full h-full object-cover animate-zoom-slow"
         />
 
@@ -20,7 +20,7 @@ const AboutUs = () => {
 
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-white text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-wide">
-            About <span className="text-[#c8e06d]">skMakhana</span>
+            About <span className="text-[#c8e06d]">SK Industries</span>
           </h1>
 
           <p className="text-white/90 mt-4 text-sm sm:text-lg max-w-2xl leading-relaxed">
@@ -39,7 +39,7 @@ const AboutUs = () => {
             </h2>
 
             <p className="mt-4 text-[#5f7a3c] leading-relaxed text-justify">
-              skMakhana is a growing premium brand focused on delivering high
+              SK Industries is a growing premium brand focused on delivering high
               quality, fresh and healthy makhana snacks. Our aim is to build a
               clean, honest and customer-first brand.
             </p>

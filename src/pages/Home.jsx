@@ -154,7 +154,7 @@ const Home = () => {
     </Swiper>
   </div>
 </section>
-{/* 🏭 About skMakhana + Interactive Stats */}
+{/* 🏭 About SK Industries + Interactive Stats */}
 <section className="relative bg-[#f6f8f1] py-16 overflow-hidden">
 
   {/* Animated Gradient Blobs */}
@@ -167,11 +167,11 @@ const Home = () => {
     <div className="text-center md:text-left">
       <h2 className="text-2xl md:text-4xl font-bold text-[#4c6b2c] leading-tight">
         Premium Quality Makhana by{" "}
-        <span className="text-[#85aa52]">skMakhana</span>
+        <span className="text-[#85aa52]">SK Industries</span>
       </h2>
 
       <p className="mt-5 text-[#5f7a3c] leading-relaxed text-justify md:text-left">
-        skMakhana is a growing brand dedicated to delivering premium quality,
+        SK Industries is a growing brand dedicated to delivering premium quality,
         fresh and healthy Makhana snacks. We carefully source, process and pack
         our products to ensure exceptional taste, nutrition and freshness in
         every bite.

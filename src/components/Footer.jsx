@@ -77,7 +77,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10 mt-14 py-5 text-center text-xs text-gray-500">
-        © 2026 <span className="text-[#a4c06a] font-medium">SKMakhana</span>. All rights reserved.
+        © 2026 <span className="text-[#a4c06a] font-medium">SK Industries</span>. All rights reserved.
       </div>
     </footer>
   );
